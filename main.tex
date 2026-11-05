@@ -1,0 +1,62 @@
+\documentclass[svgnames]{beamer}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{scalefnt}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc}
+
+\usetheme{Madrid}
+\usetheme{Frankfurt}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{fr1}{bg=Blue, fg=white}
+\setbeamercolor{fr2}{bg=LightGray, fg=black}
+
+\newcommand{\latleq}{\sqsubseteq}
+\newcommand{\join}{\sqcup}
+
+\lstset{%
+  escapeinside={\%*}{*)},          % To add LaTeX within your code
+  basicstyle=\footnotesize
+}
+
+\title[Project Update]{Autoformalization}
+\vspace{0.1in}
+
+\author[Melchizedek T P, PL Lab, IISc Bangalore]{Amrit, Melchizedek}
+\institute{Programming Languages Lab\\
+Dept. of Computer Science and Automation\\
+Indian Institute of Science, Bangalore}
+\date[Credits]{\scriptsize{Guide: Deepak D'souza}}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=.3cm]{fr1}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{fr2}%
+      \usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=.3cm]{fr1}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+  }%
+}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Data Set}
+\input{1_dataset}
+
+\section{Benchmarks}
+\input{2_bench-marks}
+
+
+
+\end{document}  
